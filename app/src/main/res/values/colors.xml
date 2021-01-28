@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#010223</color>
+    <color name="colorPrimaryDark">#221B33</color>
+    <color name="colorAccent">#6B3D77</color>
+    <color name="colorWhitey">#DEC6E4</color>
+    <color name="colorPS">#2A4FDC</color>
+    <color name="colorXBOX">#0CB80C</color>
+
+</resources>

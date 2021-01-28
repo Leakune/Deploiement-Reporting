@@ -1,0 +1,20 @@
+<resources>
+    <!-- Main activity -->
+    <string name="app_name">PS vs XBOX</string>
+    <string name="title_home">Home</string>
+    <string name="goToPS">Store Playstation</string>
+    <string name="goToXBOX">Store XBOX</string>
+    <string name="exit">Exit Application</string>
+
+    <!-- PS activity -->
+    <string name="title_activity_ps">PS</string>
+
+    <!-- XBOX activity -->
+    <string name="title_activity_xbox">XBOX</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+</resources>

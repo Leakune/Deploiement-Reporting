@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QuiVeutGagnerDesMillions.iml" filepath="$PROJECT_DIR$/.idea/modules/QuiVeutGagnerDesMillions.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QuiVeutGagnerDesMillions.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QuiVeutGagnerDesMillions.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PS_vs_XBOX.iml" filepath="$PROJECT_DIR$/.idea/modules/PS_vs_XBOX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PS_vs_XBOX.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PS_vs_XBOX.app.iml" />
     </modules>
   </component>
 </project>
