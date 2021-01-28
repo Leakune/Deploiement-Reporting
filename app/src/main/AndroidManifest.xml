@@ -11,11 +11,11 @@
         android:theme="@style/Theme.PSVsXBOX">
         <activity
             android:name=".XBOX"
-            android:label="@string/title_activity_x_b_o_x"
+            android:label="@string/title_activity_xbox"
             android:theme="@style/Theme.PSVsXBOX.NoActionBar"></activity>
         <activity
             android:name=".PS"
-            android:label="@string/title_activity_p_s"
+            android:label="@string/title_activity_ps"
             android:theme="@style/Theme.PSVsXBOX.NoActionBar" />
         <activity
             android:name=".MainActivity"

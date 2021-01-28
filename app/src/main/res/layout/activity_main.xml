@@ -11,24 +11,15 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/xbox_vs_ps5"/>
+        android:src="@drawable/xbox_vs_ps5" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:id="@+id/btn_start"
-        android:textSize="20sp"
-        android:textColor="@color/colorWhitey"
-        android:background="@color/colorPS"
-        android:text="@string/goToPS"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:id="@+id/btn_add"
+        android:id="@+id/btn_XBOX"
         android:textSize="20sp"
         android:textColor="@color/colorWhitey"
         android:background="@color/colorXBOX"
@@ -37,7 +28,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:id="@+id/btn_class"
+        android:id="@+id/btn_PS"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhitey"
+        android:background="@color/colorPS"
+        android:text="@string/goToPS"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/btn_exit"
         android:textSize="20sp"
         android:textColor="@color/colorWhitey"
         android:background="@color/colorPrimaryDark"

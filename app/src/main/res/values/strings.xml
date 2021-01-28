@@ -5,12 +5,20 @@
     <string name="goToPS">Store Playstation</string>
     <string name="goToXBOX">Store XBOX</string>
     <string name="exit">Exit Application</string>
+    <string name="pop_title">Are you sure you want to leave?</string>
+    <string name="pop_yes">Yes</string>
+    <string name="pop_no">No</string>
+    <string name="pop_buy">Buying successfully!</string>
+    <string name="pop_ok">OK</string>
+    <string name="buy">Buy console</string>
 
     <!-- PS activity -->
     <string name="title_activity_ps">PS</string>
+    <string name="pop_buy_PS">You have successfully bought Playstation console!</string>
 
     <!-- XBOX activity -->
     <string name="title_activity_xbox">XBOX</string>
+    <string name="pop_buy_XBOX">You have successfully bought XBOX console!</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
