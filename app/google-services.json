@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "93621236578",
-    "project_id": "appreporting-1142d",
-    "storage_bucket": "appreporting-1142d.appspot.com"
+    "project_number": "50439783765",
+    "project_id": "xbox-vs-ps",
+    "storage_bucket": "xbox-vs-ps.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:93621236578:android:44e942d1e33dd425e9323b",
+        "mobilesdk_app_id": "1:50439783765:android:3e889c05c63d44f6b05bdc",
         "android_client_info": {
           "package_name": "com.ludovic.psvsxbox"
         }
       },
       "oauth_client": [
         {
-          "client_id": "93621236578-n1kbtj53j3l89l7vn67rlfqjn14d4lh9.apps.googleusercontent.com",
+          "client_id": "50439783765-s80spgq1ol7qr8rqn47lpofdeq8mqgda.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDUXc1kT5bfjdLAteA73k4w1FiqNHegvc0"
+          "current_key": "AIzaSyDUn2dStclwCXEbUCpt-jfGqJPVr3rtYRk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "93621236578-n1kbtj53j3l89l7vn67rlfqjn14d4lh9.apps.googleusercontent.com",
+              "client_id": "50439783765-s80spgq1ol7qr8rqn47lpofdeq8mqgda.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
