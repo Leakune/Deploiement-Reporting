@@ -27,6 +27,25 @@
         android:layout_height="300dp"
         android:scaleType="centerCrop"
         android:src="@drawable/console_ps5" />
+    <CheckBox android:id="@+id/checkbox_console_PS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_console_PS"
+        android:textColor="@color/colorWhitey"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onCheckboxClicked"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/accessoires_ps" />
+    <CheckBox android:id="@+id/checkbox_accessoires_PS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_accessoires_PS"
+        android:textColor="@color/colorWhitey"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onCheckboxClicked"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
