@@ -14,14 +14,14 @@
 
     <!-- PS activity -->
     <string name="title_activity_ps">PS</string>
-    <string name="pop_buy_PS">You have successfully bought Playstation console!</string>
+    <string name="pop_buy_PS">You have successfully bought Playstation console and/or accessories!</string>
     <string name="checkbox_console_PS">add the console PS5 in the basket</string>
     <string name="checkbox_accessoires_PS">add the accessories PS in the basket</string>
 
 
     <!-- XBOX activity -->
     <string name="title_activity_xbox">XBOX</string>
-    <string name="pop_buy_XBOX">You have successfully bought XBOX console!</string>
+    <string name="pop_buy_XBOX">You have successfully bought XBOX console and/or accessories!</string>
     <string name="checkbox_console_XBOX">add the console XBOX in the basket</string>
     <string name="checkbox_accessoires_XBOX">add the accessories XBOX in the basket</string>
 

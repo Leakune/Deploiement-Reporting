@@ -22,9 +22,13 @@ import android.widget.CheckBox;
 public class PS extends AppCompatActivity {
     Button btn_buy;
     private FirebaseAnalytics mFirebaseAnalytics;
-    private Bundle psCart;
+    private Bundle itemConsoleCart;
     private Bundle itemConsole;
-    Bundle itemAccessories;
+    private Bundle itemAccessories;
+    private Bundle itemAccessoriesCart;
+    public Boolean console_checked = false;
+    public Boolean accessories_checked = false;
+
     @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,18 @@ public class PS extends AppCompatActivity {
                         .setPositiveButton(getResources().getString(R.string.pop_ok), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
+                                Bundle purchaseParams = new Bundle();
+                                purchaseParams.putString(FirebaseAnalytics.Param.TRANSACTION_ID, "T8888");
+                                purchaseParams.putString(FirebaseAnalytics.Param.AFFILIATION, "Sony");
+                                purchaseParams.putString(FirebaseAnalytics.Param.CURRENCY, "EUR");
+                                purchaseParams.putDouble(FirebaseAnalytics.Param.VALUE, 550.0);
+                                purchaseParams.putDouble(FirebaseAnalytics.Param.TAX, 30);
+                                purchaseParams.putDouble(FirebaseAnalytics.Param.SHIPPING, 10);
+                                purchaseParams.putParcelableArray(FirebaseAnalytics.Param.ITEMS,
+                                        new Parcelable[]{ itemConsoleCart, itemAccessoriesCart });
+
+                                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.PURCHASE, purchaseParams);
+
                                 Intent in = new Intent(PS.this, MainActivity.class);
                                 startActivity(in);
                                 finish();
@@ -102,34 +118,56 @@ public class PS extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.checkbox_console_PS:
                 if (checked){
+                    this.console_checked = true;
                     System.out.println("console checked");
-                    /*this.psCart.putString(FirebaseAnalytics.Param.CURRENCY, "EUR");
-                    this.psCart.putDouble(FirebaseAnalytics.Param.VALUE, 500.0);
-                    this.psCart.putParcelableArray(FirebaseAnalytics.Param.ITEMS,
-                            new Parcelable[]{ this.itemConsole });
+                    this.itemConsoleCart = new Bundle(this.itemConsole);
+                    this.itemConsoleCart.putLong(FirebaseAnalytics.Param.QUANTITY, 1);
 
-                    mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_CART, this.psCart);*/
-                    Bundle itemConsoleWishlist = new Bundle(this.itemConsole);
-                    itemConsoleWishlist.putLong(FirebaseAnalytics.Param.QUANTITY, 1);
+                    Bundle addToCartParams = new Bundle();
+                    addToCartParams.putString(FirebaseAnalytics.Param.CURRENCY, "EUR");
+                    addToCartParams.putDouble(FirebaseAnalytics.Param.VALUE, 500.0);
+                    addToCartParams.putParcelableArray(FirebaseAnalytics.Param.ITEMS,
+                            new Parcelable[]{ this.itemConsoleCart });
 
-                    Bundle addToWishlistParams = new Bundle();
-                    addToWishlistParams.putString(FirebaseAnalytics.Param.CURRENCY, "USD");
-                    addToWishlistParams.putDouble(FirebaseAnalytics.Param.VALUE, 500.0);
-                    addToWishlistParams.putParcelableArray(FirebaseAnalytics.Param.ITEMS,
-                            new Parcelable[]{ itemConsoleWishlist });
-
-                    mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_WISHLIST, addToWishlistParams);
+                    mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_CART, addToCartParams);
                 }
                 else{
+                    this.console_checked = false;
                     System.out.println("console unchecked");
+                    Bundle removeCartParams = new Bundle();
+                    removeCartParams.putString(FirebaseAnalytics.Param.CURRENCY, "EUR");
+                    removeCartParams.putDouble(FirebaseAnalytics.Param.VALUE, 500.00);
+                    removeCartParams.putParcelableArray(FirebaseAnalytics.Param.ITEMS,
+                            new Parcelable[]{ this.itemConsoleCart });
+
+                    mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.REMOVE_FROM_CART, removeCartParams);
                 }
                 break;
             case R.id.checkbox_accessoires_PS:
                 if (checked){
+                    this.accessories_checked = true;
                     System.out.println("accessories checked");
+                    this.itemAccessoriesCart = new Bundle(this.itemAccessories);
+                    this.itemAccessoriesCart.putLong(FirebaseAnalytics.Param.QUANTITY, 1);
+
+                    Bundle addToCartParams = new Bundle();
+                    addToCartParams.putString(FirebaseAnalytics.Param.CURRENCY, "EUR");
+                    addToCartParams.putDouble(FirebaseAnalytics.Param.VALUE, 50.00);
+                    addToCartParams.putParcelableArray(FirebaseAnalytics.Param.ITEMS,
+                            new Parcelable[]{ this.itemAccessoriesCart });
+
+                    mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_CART, addToCartParams);
                 }
                 else{
+                    this.accessories_checked = false;
                     System.out.println("accessories unchecked");
+                    Bundle removeCartParams = new Bundle();
+                    removeCartParams.putString(FirebaseAnalytics.Param.CURRENCY, "EUR");
+                    removeCartParams.putDouble(FirebaseAnalytics.Param.VALUE, 50.00);
+                    removeCartParams.putParcelableArray(FirebaseAnalytics.Param.ITEMS,
+                            new Parcelable[]{ this.itemAccessoriesCart });
+
+                    mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.REMOVE_FROM_CART, removeCartParams);
                 }
                 break;
         }

@@ -1,40 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".XBOX"
-    android:background="@color/colorBackground">
-
-    <com.google.android.material.appbar.AppBarLayout
+    android:fillViewport="true">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.PSVsXBOX.AppBarOverlay">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".XBOX"
+        android:background="@color/colorBackground">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.PSVsXBOX.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.PSVsXBOX.AppBarOverlay">
 
-    </com.google.android.material.appbar.AppBarLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.PSVsXBOX.PopupOverlay" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/console_xbox" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:id="@+id/btn_buy"
-        android:textSize="20sp"
-        android:textColor="@color/colorWhitey"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/buy"/>
+        </com.google.android.material.appbar.AppBarLayout>
 
-</LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/console_xbox" />
+        <CheckBox android:id="@+id/checkbox_console_XBOX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_console_XBOX"
+            android:textColor="@color/colorWhitey"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="onCheckboxClicked"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/accessoires_xbox" />
+        <CheckBox android:id="@+id/checkbox_accessoires_XBOX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_accessoires_XBOX"
+            android:textColor="@color/colorWhitey"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="onCheckboxClicked"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_buy"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhitey"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/buy"/>
+
+    </LinearLayout>
+</ScrollView>

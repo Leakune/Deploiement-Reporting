@@ -33,17 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-        Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "id");
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "name");
-        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "main_activity");
-        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
-
 
         btn_PS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                eventAnalytics("btn_PS", "bouton ps", "bouton");
+                eventAnalytics("1", "playstation store", "store");
                 Intent i = new Intent(MainActivity.this, PS.class);
                 startActivity(i);
                 finish();
@@ -52,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btn_XBOX.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                eventAnalytics("btn_XBOX", "bouton xbox", "bouton");
+                eventAnalytics("2", "xbox store", "store");
                 Intent i = new Intent(MainActivity.this, XBOX.class);
                 startActivity(i);
                 finish();

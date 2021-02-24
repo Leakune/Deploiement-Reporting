@@ -1,0 +1,34 @@
+> Task :app:signingReport
+Variant: debug
+Config: debug
+Store: /Users/ludovic/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DE:B9:19:B3:55:50:51:FF:D9:84:46:C1:C6:CA:9E:90
+SHA1: CD:39:91:96:6D:1C:AF:47:94:57:EA:AE:A9:32:6A:9A:99:A8:16:FF
+SHA-256: 19:5A:2A:0C:F2:87:95:68:6C:97:81:F7:83:B1:2F:83:39:A4:25:B8:73:5C:F1:A2:B4:FF:FD:C0:AD:7F:0F:3B
+Valid until: dimanche 20 novembre 2050
+----------
+Variant: release
+Config: none
+----------
+Variant: debugAndroidTest
+Config: debug
+Store: /Users/ludovic/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DE:B9:19:B3:55:50:51:FF:D9:84:46:C1:C6:CA:9E:90
+SHA1: CD:39:91:96:6D:1C:AF:47:94:57:EA:AE:A9:32:6A:9A:99:A8:16:FF
+SHA-256: 19:5A:2A:0C:F2:87:95:68:6C:97:81:F7:83:B1:2F:83:39:A4:25:B8:73:5C:F1:A2:B4:FF:FD:C0:AD:7F:0F:3B
+Valid until: dimanche 20 novembre 2050
+----------
+Variant: debugUnitTest
+Config: debug
+Store: /Users/ludovic/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DE:B9:19:B3:55:50:51:FF:D9:84:46:C1:C6:CA:9E:90
+SHA1: CD:39:91:96:6D:1C:AF:47:94:57:EA:AE:A9:32:6A:9A:99:A8:16:FF
+SHA-256: 19:5A:2A:0C:F2:87:95:68:6C:97:81:F7:83:B1:2F:83:39:A4:25:B8:73:5C:F1:A2:B4:FF:FD:C0:AD:7F:0F:3B
+Valid until: dimanche 20 novembre 2050
+----------
+Variant: releaseUnitTest
+Config: none
+----------
