@@ -1,34 +1,36 @@
+
 > Task :app:signingReport
 Variant: debug
 Config: debug
-Store: /Users/ludovic/.android/debug.keystore
+Store: C:\Users\lfavi\.android\debug.keystore
 Alias: AndroidDebugKey
-MD5: DE:B9:19:B3:55:50:51:FF:D9:84:46:C1:C6:CA:9E:90
-SHA1: CD:39:91:96:6D:1C:AF:47:94:57:EA:AE:A9:32:6A:9A:99:A8:16:FF
-SHA-256: 19:5A:2A:0C:F2:87:95:68:6C:97:81:F7:83:B1:2F:83:39:A4:25:B8:73:5C:F1:A2:B4:FF:FD:C0:AD:7F:0F:3B
-Valid until: dimanche 20 novembre 2050
+MD5: BC:93:00:CF:FD:6A:85:DB:00:1F:DB:01:CB:3E:B4:98
+SHA1: 7F:A4:00:4A:6D:EF:2A:DA:7C:D9:47:37:1C:A0:F6:6D:FF:6D:03:50
+SHA-256: FC:FC:A3:0D:5A:B1:92:CF:5A:76:20:54:78:19:32:91:C3:1D:FF:78:81:FE:D2:5E:D7:44:A5:26:43:A5:4E:6A
+Valid until: vendredi 8 avril 2050
 ----------
 Variant: release
 Config: none
 ----------
 Variant: debugAndroidTest
 Config: debug
-Store: /Users/ludovic/.android/debug.keystore
+Store: C:\Users\lfavi\.android\debug.keystore
 Alias: AndroidDebugKey
-MD5: DE:B9:19:B3:55:50:51:FF:D9:84:46:C1:C6:CA:9E:90
-SHA1: CD:39:91:96:6D:1C:AF:47:94:57:EA:AE:A9:32:6A:9A:99:A8:16:FF
-SHA-256: 19:5A:2A:0C:F2:87:95:68:6C:97:81:F7:83:B1:2F:83:39:A4:25:B8:73:5C:F1:A2:B4:FF:FD:C0:AD:7F:0F:3B
-Valid until: dimanche 20 novembre 2050
+MD5: BC:93:00:CF:FD:6A:85:DB:00:1F:DB:01:CB:3E:B4:98
+SHA1: 7F:A4:00:4A:6D:EF:2A:DA:7C:D9:47:37:1C:A0:F6:6D:FF:6D:03:50
+SHA-256: FC:FC:A3:0D:5A:B1:92:CF:5A:76:20:54:78:19:32:91:C3:1D:FF:78:81:FE:D2:5E:D7:44:A5:26:43:A5:4E:6A
+Valid until: vendredi 8 avril 2050
 ----------
 Variant: debugUnitTest
 Config: debug
-Store: /Users/ludovic/.android/debug.keystore
+Store: C:\Users\lfavi\.android\debug.keystore
 Alias: AndroidDebugKey
-MD5: DE:B9:19:B3:55:50:51:FF:D9:84:46:C1:C6:CA:9E:90
-SHA1: CD:39:91:96:6D:1C:AF:47:94:57:EA:AE:A9:32:6A:9A:99:A8:16:FF
-SHA-256: 19:5A:2A:0C:F2:87:95:68:6C:97:81:F7:83:B1:2F:83:39:A4:25:B8:73:5C:F1:A2:B4:FF:FD:C0:AD:7F:0F:3B
-Valid until: dimanche 20 novembre 2050
+MD5: BC:93:00:CF:FD:6A:85:DB:00:1F:DB:01:CB:3E:B4:98
+SHA1: 7F:A4:00:4A:6D:EF:2A:DA:7C:D9:47:37:1C:A0:F6:6D:FF:6D:03:50
+SHA-256: FC:FC:A3:0D:5A:B1:92:CF:5A:76:20:54:78:19:32:91:C3:1D:FF:78:81:FE:D2:5E:D7:44:A5:26:43:A5:4E:6A
+Valid until: vendredi 8 avril 2050
 ----------
 Variant: releaseUnitTest
 Config: none
 ----------
+
